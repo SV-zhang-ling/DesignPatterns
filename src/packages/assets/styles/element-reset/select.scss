@@ -1,0 +1,68 @@
+/** select reset */
+.el-select {
+  .el-select__wrapper {
+    font-size: $font-size-regular;
+    background-color: $input-bg-color;
+    border-radius: $base-border-radius;
+    box-shadow: none;
+    transition: none;
+
+    &.is-hovering:not(.is-focused) {
+      border: 1px solid $radio-active-color;
+      box-shadow: none;
+    }
+
+    &.is-disabled {
+      opacity: 0.4;
+    }
+
+    .el-select__placeholder {
+      color: $font-main-color;
+
+      &.is-transparent {
+        color: $font-tip-color;
+      }
+    }
+  }
+}
+
+.el-popper {
+  &.is-dark,
+  &.is-light {
+    margin-top: -12px;
+    background-color: $dialog-bg-color;
+    border: none;
+    border-radius: 0;
+  }
+
+  .el-select-dropdown__wrap {
+    max-height: 306px;
+  }
+}
+
+.el-select-dropdown {
+  background-color: $dialog-bg-color;
+  border: none;
+  border-radius: $base-border-radius;
+  box-shadow: none;
+
+  .el-select-dropdown__list {
+    padding: 0;
+  }
+
+  .el-select-dropdown__item {
+    font-size: $font-size-regular;
+    color: $font-main-color;
+
+    &.is-hovering,
+    &.is-selected {
+      font-weight: normal;
+      color: $font-main-color;
+      background-color: $select-item-hover-color;
+    }
+  }
+}
+
+.el-popper__arrow {
+  display: none;
+}

@@ -1,0 +1,29 @@
+/** form reset */
+.el-form {
+  .el-form-item {
+    &.is-error {
+      .el-input__wrapper {
+        border-color: $form-item-error-color;
+        box-shadow: none;
+
+        &:hover {
+          border-color: $form-item-error-color;
+        }
+      }
+    }
+
+    .el-form-item__label {
+      font-size: $font-size-regular;
+      font-weight: normal;
+      color: $font-main-color;
+    }
+
+    &.is-required:not(.is-no-asterisk) {
+      .el-form-item__label::before {
+        position: relative;
+        top: 3px;
+        color: $form-item-error-color;
+      }
+    }
+  }
+}

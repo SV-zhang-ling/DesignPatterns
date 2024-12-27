@@ -1,0 +1,63 @@
+/** input/textarea reset */
+$input-inner-height: 28px;
+
+.el-input {
+  .el-input__wrapper {
+    padding: 1px 11px;
+    background-color: $input-bg-color;
+    border: 1px solid transparent;
+    border-radius: $base-border-radius;
+    box-shadow: none;
+
+    &:hover {
+      border-color: $radio-active-color;
+    }
+
+    .el-input__inner {
+      height: $input-inner-height;
+      font-size: $font-size-regular;
+      color: $font-main-color;
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.4;
+
+    .el-input__wrapper {
+      background-color: $input-bg-color;
+      border: 1px solid transparent;
+      border-radius: $base-border-radius;
+      box-shadow: none;
+
+      .el-input__inner {
+        height: $input-inner-height;
+        font-size: $font-size-regular;
+        color: $font-main-color;
+      }
+    }
+  }
+
+  .el-input-group__append {
+    padding: 0 5px;
+    font-size: $font-size-regular;
+    color: $font-main-color;
+    background-color: $input-bg-color;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.el-textarea {
+  textarea {
+    font-size: $font-size-regular;
+    color: $font-main-color;
+    background-color: $input-bg-color;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+  }
+
+  :hover {
+    box-shadow: none;
+  }
+}

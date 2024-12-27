@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "HarmonyOS Sans SC Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./HarmonyOS_Sans_SC_Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans SC Bold";
+  src: url("./HarmonyOS_Sans_SC_Bold.woff2") format("woff2");
+}

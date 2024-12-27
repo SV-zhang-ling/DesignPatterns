@@ -1,0 +1,37 @@
+/** collapse reset */
+.el-collapse {
+  border: none;
+}
+
+.el-collapse-item {
+  border: none;
+  border-bottom: 1px solid $divide-dark-color;
+
+  .el-collapse-item__header {
+    position: relative;
+    height: 40px;
+    padding-left: 10px;
+    font-size: $font-size-regular;
+    font-weight: 400;
+    line-height: 40px;
+    color: $font-inactive-color;
+    background-color: $page-bg-color;
+    border: none;
+
+    .el-collapse-item__arrow {
+      position: absolute;
+      margin: 0;
+    }
+  }
+
+  .el-collapse-item__wrap {
+    background-color: $page-bg-color;
+    border: none;
+  }
+
+  .el-collapse-item__content {
+    padding: 0 8px 0 10px;
+    font-size: $font-size-regular;
+    color: $font-main-color;
+  }
+}

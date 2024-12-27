@@ -1,32 +1,37 @@
-# Prerequisites
-*.d
+.DS_Store
+node_modules
+/dist
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+# local env files
+.env.local
+.env.*.local
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Fortran module files
-*.mod
-*.smod
+# Editor directories and files
+.idea
+# .vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# npm lockFile
+yarn.lock
+pnpm-lock.yaml
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# test page 忽略测试文件
+src/views/PlaygroundView.vue
+src/views/PlaygroundBscanView.vue
+demo.html
 
-# Executables
-*.exe
-*.out
-*.app
+public/3mmx3mm 384x384
+public/AS Star 32 Lines
+public/transform
+public/TransformTest
+public/oct-slo

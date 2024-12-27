@@ -1,0 +1,112 @@
+/** datepicker reset */
+.el-date-editor {
+  .el-input__wrapper {
+    .el-input__prefix {
+      display: none;
+    }
+  }
+
+  .el-input__suffix {
+    width: 15px;
+    height: 15px;
+    background: url("@/packages/assets/icons/calendar.svg") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.el-date-picker {
+  color: $font-main-color;
+  background-color: $dialog-bg-color;
+
+  .el-date-picker__header {
+    padding: 12px 12px 20px;
+    margin: 0;
+    border-bottom: 1px solid #505050;
+
+    .el-date-picker__header-label {
+      position: relative;
+      top: 6px;
+      font-size: $font-size-middle;
+      color: inherit;
+    }
+
+    .d-arrow-left {
+      margin-left: 5px;
+    }
+
+    .arrow-left {
+      margin-left: 15px;
+    }
+
+    .d-arrow-right {
+      margin-right: 5px;
+    }
+
+    .arrow-right {
+      margin-right: 15px;
+    }
+  }
+
+  .el-picker-panel__content {
+    margin-top: 10px;
+  }
+
+  .el-date-table {
+    font-size: $font-size-middle;
+
+    th {
+      color: inherit;
+      border-bottom: none;
+    }
+
+    td {
+      height: 32px;
+      padding: 0;
+
+      .el-date-table-cell {
+        height: 100%;
+        padding: 0;
+      }
+
+      &.available:hover {
+        .el-date-table-cell__text {
+          color: $font-main-color;
+          background-color: $hover-item-bg-color;
+          border-radius: 0;
+        }
+      }
+
+      &.current {
+        .el-date-table-cell__text {
+          font-weight: normal;
+          color: $font-main-color;
+          background-color: $selected-item-bg-color;
+        }
+      }
+
+      &.current.available:hover {
+        color: $font-highlight-color;
+
+        .el-date-table-cell__text {
+          background-color: $selected-item-bg-color;
+        }
+      }
+    }
+
+    td .el-date-table-cell .el-date-table-cell__text {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 2px;
+    }
+
+    td.disabled .el-date-table-cell {
+      background-color: transparent;
+    }
+  }
+
+  .el-picker-panel__icon-btn {
+    font-size: $font-size-regular;
+    color: inherit;
+  }
+}

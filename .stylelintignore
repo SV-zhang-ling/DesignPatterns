@@ -1,0 +1,4 @@
+/dist/*
+/public/*
+public/*
+src/assets/style/reset.scss

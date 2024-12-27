@@ -1,0 +1,37 @@
+/** checkbox reset */
+.el-checkbox {
+  .el-checkbox__label {
+    color: $font-main-color;
+  }
+
+  &.is-disabled .el-checkbox__inner,
+  .el-checkbox__inner {
+    width: $checkbox-width;
+    height: $checkbox-height;
+    background-color: $checkbox-default-bg-color;
+    border-color: $divide-light-color;
+  }
+
+  &.is-checked,
+  &.is-disabled.is-checked {
+    .el-checkbox__label {
+      color: $font-main-color;
+    }
+
+    .el-checkbox__inner {
+      background-color: $radio-active-color;
+      border-color: transparent;
+
+      &::after {
+        left: 6px;
+        height: 10px;
+        border-color: $divide-dark-color;
+        border-width: 2px;
+      }
+    }
+  }
+
+  &.is-disabled {
+    opacity: 0.4;
+  }
+}

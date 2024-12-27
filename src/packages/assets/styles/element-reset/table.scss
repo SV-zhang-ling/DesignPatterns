@@ -1,0 +1,95 @@
+/** table reset */
+.el-table {
+  background-color: transparent;
+
+  .el-table__inner-wrapper::before {
+    background-color: transparent;
+  }
+
+  .el-table__expanded-cell {
+    background-color: transparent;
+  }
+
+  th.el-table__cell {
+    height: $table-row-height;
+    padding: 0;
+    font-size: $font-size-regular;
+    font-weight: normal;
+    line-height: normal;
+    color: $table-header-font-color;
+    letter-spacing: 0;
+    background-color: $table-header-bg-color;
+    border: none;
+    border-bottom: 1px solid $divide-dark-color;
+
+    &.is-leaf {
+      border-bottom: 1px solid $divide-dark-color;
+      border-left: 1px solid $divide-dark-color;
+    }
+
+    &.el-table-fixed-column--left,
+    &.el-table-fixed-column--right {
+      background-color: $table-header-bg-color;
+    }
+  }
+
+  td.el-table__cell {
+    height: $table-row-height;
+    font-size: $font-size-regular;
+    line-height: $table-row-height;
+    color: $font-main-color;
+    background-color: $table-row-light-color;
+    border: none;
+
+    &.el-table-fixed-column--left,
+    &.el-table-fixed-column--right {
+      background-color: $table-row-light-color;
+    }
+  }
+
+  tr.current-row > td.el-table__cell {
+    background-color: $table-row-highlight-color;
+  }
+
+  tr.hover-row {
+    cursor: pointer;
+
+    &.current-row > td.el-table__cell {
+      background-color: $table-row-highlight-color;
+    }
+
+    & > td.el-table__cell {
+      background-color: $table-row-hover-color;
+    }
+  }
+
+  tr.el-table__row--level-1:hover {
+    cursor: pointer;
+  }
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped {
+  td.el-table__cell {
+    background-color: $table-row-dark-color;
+  }
+
+  &.current-row {
+    td.el-table__cell {
+      background-color: $table-row-highlight-color;
+    }
+  }
+
+  &.hover-row > td.el-table__cell {
+    background-color: $table-row-hover-color;
+  }
+}
+
+.el-table--enable-row-hover .el-table__body {
+  tr:hover > td.el-table__cell {
+    background-color: $table-row-hover-color;
+  }
+
+  .expand-click-row:hover > td.el-table__cell {
+    background-color: #2e2e2f;
+  }
+}
